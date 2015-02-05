@@ -20,7 +20,7 @@ The possibilities
 - Toggle info about the video. (Title and such)
 
 Possible options:
-
+```
 var settings = {
 	width: '100%', //een aantal pixels is ook mogelijk
 	height: '100%',
@@ -32,9 +32,9 @@ var settings = {
 	controls: 0, //1 of 0 waarbij 1 gelijk staat aan true
 	showinfo: 0 //1 of 0 waarbij 1 gelijk staat aan true
 };
-
+```
 Options kan be passed like this:
-
+```
 function onYouTubeIframeAPIReady() {
 	var options = {
 		//Deze options kun je zelf definieren
@@ -44,3 +44,4 @@ function onYouTubeIframeAPIReady() {
 	};
 	$.fn.addPlayer(options);
 }
+```
