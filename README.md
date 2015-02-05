@@ -1,12 +1,10 @@
 # youtube-api-jquery-plugin
-schoolopdracht
 
 
-Mijn concept
-Met mijn plugin in wil ik het makkelijker maken om gebruik te maken van een aantal
-functionaliteiten van de youtube api. Het idee is dat je gewoon een array met opties kan
-meegeven aan een functie en dat de rest vanzelf gebeurd. Het voordeel hiervan is dat je alleen
-de videoID in de opties hoeft mee te geven om een video te embedden.
+The idea
+
+With this plugin I have tried to make it easier to consume the youtube api. You can just give some parameters to a function and the plugin will do the rest. The advantage of this is that you only have to specify a videoID to embed it.
+
 
 The possibilities
 
@@ -22,22 +20,21 @@ The possibilities
 Possible options:
 ```
 var settings = {
-	width: '100%', //een aantal pixels is ook mogelijk
+	width: '100%', 
 	height: '100%',
 	videoId: 'JR7MUfxns9c', //https://www.youtube.com/watch?v=JR7MUfxns9c
 	autoPlay: false, //true or false
 	mute: false, //true or false
-	loop: 1, //1 of 0 waarbij 1 gelijk staat aan true
-	showSuggestions: 0, //1 of 0 waarbij 1 gelijk staat aan true
-	controls: 0, //1 of 0 waarbij 1 gelijk staat aan true
-	showinfo: 0 //1 of 0 waarbij 1 gelijk staat aan true
+	loop: 1, //true or false, with 1 being true
+	showSuggestions: 0, 
+	controls: 0, 
+	showinfo: 0 
 };
 ```
 Options kan be passed like this:
 ```
 function onYouTubeIframeAPIReady() {
 	var options = {
-		//Deze options kun je zelf definieren
 		videoId: 'pKe34_KrPK8',
 		autoPlay: true,
 		mute: true
